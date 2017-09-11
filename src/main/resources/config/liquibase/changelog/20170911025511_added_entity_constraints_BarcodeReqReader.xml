@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <!--
+        Added the constraints for entity BarcodeReqReader.
+    -->
+    <changeSet id="20170911025511-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="req_id"
+                                 baseTableName="barcode_req_reader"
+                                 constraintName="fk_barcode_req_reader_req_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="barcode_req"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,38 @@
+entity BarcodeReq{
+	requestDate LocalDate,
+    govid String,
+    officeId String
+}
+entity BarcodeReqReader{
+	readerName String
+}
+enum BarcodeReqType{
+	AUDIT, RECEIVE, SEND, RETIRE
+}
+entity BarcodeReqLocation{
+	sectionRpc String,
+    reqType BarcodeReqType
+}
+entity BarcodeReqFile{
+	fileNumber String
+}
+entity BarcodeReqLocDet{
+	locAttrOne String
+}
+
+relationship OneToMany{
+	BarcodeReq to 
+    BarcodeReqReader{req} 
+}
+relationship OneToMany{
+	BarcodeReqReader{loc} to
+    BarcodeReqLocation
+}
+relationship OneToMany{
+	BarcodeReqLocation to
+    BarcodeReqLocDet{loc}
+}
+relationship OneToMany{
+	BarcodeReqLocation to
+	BarcodeReqFile{loc} 
+}

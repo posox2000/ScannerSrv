@@ -1,0 +1,12 @@
+version: '2'
+services:
+    scannersrv-app:
+        image: scannersrv
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://scannersrv-mysql:3306/scannersrv?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+    scannersrv-mysql:
+        extends:
+            file: mysql.yml
+            service: scannersrv-mysql

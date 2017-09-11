@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "loc",
+            "otherEntityName": "barcodeReqLocation",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "fileNumber",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170911025513",
+    "entityTableName": "barcode_req_file",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

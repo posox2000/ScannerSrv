@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "loc",
+            "otherEntityName": "barcodeReqLocation",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "locAttrOne",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170911025514",
+    "entityTableName": "barcode_req_loc_det",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

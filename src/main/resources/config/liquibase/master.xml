@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025510_added_entity_BarcodeReq.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025511_added_entity_BarcodeReqReader.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025512_added_entity_BarcodeReqLocation.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025513_added_entity_BarcodeReqFile.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025514_added_entity_BarcodeReqLocDet.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="classpath:config/liquibase/changelog/20170911025511_added_entity_constraints_BarcodeReqReader.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025512_added_entity_constraints_BarcodeReqLocation.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025513_added_entity_constraints_BarcodeReqFile.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20170911025514_added_entity_constraints_BarcodeReqLocDet.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

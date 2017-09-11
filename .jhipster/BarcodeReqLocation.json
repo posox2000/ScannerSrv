@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "barcodeReqReader",
+            "otherEntityName": "barcodeReqReader",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "barcodeReqLocDet",
+            "otherEntityName": "barcodeReqLocDet",
+            "otherEntityRelationshipName": "loc"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "barcodeReqFile",
+            "otherEntityName": "barcodeReqFile",
+            "otherEntityRelationshipName": "loc"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "sectionRpc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "reqType",
+            "fieldType": "BarcodeReqType",
+            "fieldValues": "AUDIT,RECEIVE,SEND,RETIRE"
+        }
+    ],
+    "changelogDate": "20170911025512",
+    "entityTableName": "barcode_req_location",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

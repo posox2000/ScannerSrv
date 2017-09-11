@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "barcodeReqReader",
+            "otherEntityName": "barcodeReqReader",
+            "otherEntityRelationshipName": "req"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "requestDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "govid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "officeId",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170911025510",
+    "entityTableName": "barcode_req",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

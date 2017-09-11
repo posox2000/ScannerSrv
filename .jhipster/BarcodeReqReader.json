@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "loc",
+            "otherEntityName": "barcodeReqLocation",
+            "otherEntityRelationshipName": "barcodeReqReader"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "req",
+            "otherEntityName": "barcodeReq",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "readerName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170911025511",
+    "entityTableName": "barcode_req_reader",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
