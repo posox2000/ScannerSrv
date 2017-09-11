@@ -1,0 +1,18 @@
+{
+	"batch":"BATCH1",
+	"userId":"USER1",
+	"officeId":"999",
+	"date":"2017-09-11T08:00:20.225Z",
+	"readers":[
+		{
+			"readerId":"0009-11",
+			"sectionRPCs":[
+				{
+					"sectionRPC":"AARCAA",
+					"files":[
+						{"file":"COW*123456001"},
+						{"file":"COW*123456002"}
+						]
+				}]
+		}]
+}
