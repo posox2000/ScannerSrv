@@ -27,6 +27,7 @@ import com.home.app.service.dto.ScannerReqFile;
 import com.home.app.service.dto.ScannerReqReader;
 import com.home.app.service.dto.ScannerReqSection;
 import com.home.app.web.rest.util.HeaderUtil;
+import com.home.app.worker.BarcodeReqFileValidator;
 
 @RestController
 @RequestMapping("/api")
@@ -106,6 +107,10 @@ public class ScannerResource {
         		}
         	}
         }
+        //spin file validation process
+        Thread trValidate = new Thread(new BarcodeReqFileValidator());
+        trValidate.start();
+        
         return ResponseEntity.created(new URI("/api/scanner-requests/"))
             .headers(HeaderUtil.createEntityCreationAlert("ScannerReq", ""))
             .body("test-post");
